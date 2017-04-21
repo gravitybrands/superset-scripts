@@ -1,4 +1,4 @@
-var data = (function(){
+data = (function(){
   
   function DataApi(){}
  
@@ -9,4 +9,5 @@ var data = (function(){
   return new DataApi();
   
 })();
+console.log(data);
 
