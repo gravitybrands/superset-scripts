@@ -1,12 +1,12 @@
 var data = (function(){
   
-  function DataApi(){
-    this.init();
+  function DataApi(){}
+ 
+  DataApi.prototype.load = function(options, cb) {
+    console.log('loading data');
   }
   
-  DataApi.prototype.init = function(){
-    alert('init');
-  }
+  return new DataApi();
   
 })();
 
