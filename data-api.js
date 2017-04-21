@@ -9,7 +9,7 @@
       var endpoint = "http://ec2-54-234-149-129.compute-1.amazonaws.com:8088/superset/explore_json/table/"+opts.table+"/?csv=true&form_data="
       
       var options = {
-        row_limit: null,
+        row_limit: 150000,
         page_length: 0,
         include_search: false,
         table_filter: false
