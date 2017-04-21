@@ -9,7 +9,6 @@
       var endpoint = "http://ec2-54-234-149-129.compute-1.amazonaws.com:8088/superset/explore_json/table/"+opts.table+"/?csv=true&form_data="
       
       var options = {
-        row_limit: 150000,
         page_length: 0,
         include_search: false,
         table_filter: false
@@ -28,7 +27,9 @@
       options.where = opts.where || "";
       options.having = opts.having || "";
       options.filters = opts.filters || "";
-      options.table_time_stamp_format = opts.timestamp_format || '%Y-%m-%d %H:%M:%S'
+      options.table_time_stamp_format = opts.timestamp_format || '%Y-%m-%d %H:%M:%S';
+      options.row_limit = opts.row_limit || 150000;
+
       
       endpoint += encodeURIComponent(JSON.stringify(options));
       d3.csv(endpoint, function(data) {
