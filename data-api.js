@@ -20,7 +20,7 @@
       options.time_grain_sqla = (opts.time_grain_sqla || "Time Column");
       options.since = opts.since || '100 years ago';
       options.until = opts.until || 'now';
-      options.groupBy = opts.groups || [];
+      options.groupby = opts.groups || [];
       options.metrics = opts.metrics || [];
       options.include_time = opts.include_time || true;
       options.order_by_cols = opts.order_by_cols || [];
