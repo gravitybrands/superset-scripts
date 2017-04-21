@@ -28,7 +28,7 @@
       options.having = opts.having || "";
       options.filters = opts.filters || "";
       options.table_time_stamp_format = opts.timestamp_format || '%Y-%m-%d %H:%M:%S';
-      options.row_limit = opts.row_limit || 150000;
+      options.row_limit = opts.row_limit || 50000;
 
       
       endpoint += encodeURIComponent(JSON.stringify(options));
