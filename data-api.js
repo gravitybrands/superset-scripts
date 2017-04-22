@@ -1,8 +1,8 @@
 
   
-  var data = (function(){
+  DataLoader = (function(){
   
-  function DataApi(){}
+    function DataApi(){}
 
     DataApi.prototype.load = function(opts, cb) {
       
